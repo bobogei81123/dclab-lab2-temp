@@ -35,7 +35,7 @@ module Rsa256Wrapper(
   logic [15:0] num_w, num_r;
 
 
-  assign o_num = num_r;
+  // assign o_num = num_r;
 	assign avm_address = avm_address_r;
 	assign avm_read = avm_read_r;
 	assign avm_write = avm_write_r;
@@ -48,7 +48,8 @@ module Rsa256Wrapper(
 		.i_d(d_r),
 		.i_n(n_r),
 		.o_a_pow_e(rsa_dec),
-		.o_finished(rsa_finished)
+		.o_finished(rsa_finished),
+    .o_num(o_num)
 	);
 
 	task StartRead;
@@ -100,7 +101,15 @@ module Rsa256Wrapper(
   byte real_buffer_r, real_buffer_w;
 	// assign avm_writedata = real_buffer_r;
   assign avm_writedata = write_buffer_r[255-:8];
-  typedef enum { S_BEGIN, S_READ_N, S_READ_D, S_READ_A, S_CALC, S_WRITE_ANS } MainState;
+  typedef enum { 
+    S_BEGIN, 
+    S_READ_N,
+    S_READ_D, 
+    S_READ_A, 
+    S_CALC_BEGIN,
+    S_CALC_WAIT, 
+    S_WRITE_ANS
+  } MainState;
   MainState main_state_r, main_state_w;
 
 
@@ -206,13 +215,16 @@ module Rsa256Wrapper(
       end
       S_READ_A: begin
         if (!read_flag_r) begin
-          main_state_w = S_CALC;
+          main_state_w = S_CALC_BEGIN;
           enc_w = read_buffer_r;
           rsa_start_w = 1;
         end
       end
-      S_CALC: begin
+      S_CALC_BEGIN: begin
         rsa_start_w = 0;
+        main_state_w = S_CALC_WAIT;
+      end
+      S_CALC_WAIT: begin
         if (rsa_finished) begin
           write_flag_w = 1;
           write_buffer_w = rsa_dec;

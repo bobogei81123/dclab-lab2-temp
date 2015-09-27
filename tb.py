@@ -31,20 +31,31 @@ def fast_pow(a, b, mod):
 
 @asyncio.coroutine
 def task_input():
-    n = N.to_bytes(256//8, byteorder='big')
-    d = D.to_bytes(256//8, byteorder='big')
-    c0 = C0.to_bytes(256//8, byteorder='big')
+    #  n = N.to_bytes(256//8, byteorder='big')
+    #  d = D.to_bytes(256//8, byteorder='big')
+    #  c0 = C0.to_bytes(256//8, byteorder='big')
+    def f(x):
+        return (x).to_bytes(256//8, byteorder='big')
+    def g(x):
+        return int.from_bytes(x, byteorder='big')
+    N = 19
+    D = 2
+    C0 = 3
+    n, d = map(lambda x: f(x), (N, D))
     ser.write(n)
-    ser.write(n)
+    ser.write(d)
 
-    cnt = 0;
     while True:
+        c0 = f(C0)
         ser.write(c0)
         a = ser.read(32)
-        print(a)
-        time.sleep(1)
-        cnt += 1;
-        if cnt == 2: c0 = (0).to_bytes(256//8, byteorder='big')
+        A = g(a)
+        x = A*(2**256) % N
+        y = (fast_pow(C0, D, N))
+        print(x, y)
+        if (x != y): input()
+        #  time.sleep(0.1)
+        C0 += 1
 
 def main():
     loop = asyncio.get_event_loop()
