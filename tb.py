@@ -31,31 +31,50 @@ def fast_pow(a, b, mod):
 
 @asyncio.coroutine
 def task_input():
-    #  n = N.to_bytes(256//8, byteorder='big')
-    #  d = D.to_bytes(256//8, byteorder='big')
-    #  c0 = C0.to_bytes(256//8, byteorder='big')
     def f(x):
         return (x).to_bytes(256//8, byteorder='big')
     def g(x):
         return int.from_bytes(x, byteorder='big')
-    N = 19
-    D = 2
-    C0 = 3
+
     n, d = map(lambda x: f(x), (N, D))
     ser.write(n)
     ser.write(d)
 
-    while True:
-        c0 = f(C0)
-        ser.write(c0)
-        a = ser.read(32)
-        A = g(a)
-        x = A*(2**256) % N
-        y = (fast_pow(C0, D, N))
-        print(x, y)
-        if (x != y): input()
-        #  time.sleep(0.1)
-        C0 += 1
+    cnt = 0
+    t = -time.time()
+    with open("testdata") as fl:
+        while True:
+            cnt += 1
+            l = fl.readline()
+            if not l: break;
+            text = fl.readline().strip()
+            print("Text = {}".format(text))
+            fl.readline()
+            m0t = fl.readline().split()[-1]
+            c0t = fl.readline().split()[-1]
+            fl.readline()
+            M0 = int(m0t, base=16)
+            C0 = int(c0t, base=16)
+            c0 = f(C0)
+            ser.write(c0)
+            a = ser.read(32)
+            A = g(a)
+            print("Result = {}".format(a.decode()[::-1]))
+
+            if (A == M0):
+                print("PASSED !")
+            else:
+                print("FAILED ! M0 = {}, C0 = {}, C0' = {}".format(M0, C0, A))
+
+            x = A
+            y = M0
+            print(x, y)
+
+            cnt += 1
+            print("----------------")
+
+    t += time.time()
+    print("Avg Time / request = {:.6f}".format(t / cnt))
 
 def main():
     loop = asyncio.get_event_loop()

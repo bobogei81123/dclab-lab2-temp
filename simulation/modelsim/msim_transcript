@@ -19,47 +19,47 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/DE2_115_qsys.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -vlog01compat -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/DE2_115_qsys.v 
 # -- Compiling module DE2_115_qsys
 # 
 # Top level modules:
 # 	DE2_115_qsys
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_reset_controller.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -vlog01compat -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_reset_controller.v 
 # -- Compiling module altera_reset_controller
 # 
 # Top level modules:
 # 	altera_reset_controller
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_reset_synchronizer.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -vlog01compat -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_reset_synchronizer.v 
 # -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
 # 	altera_reset_synchronizer
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/DE2_115_qsys_mm_interconnect_0.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -vlog01compat -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/DE2_115_qsys_mm_interconnect_0.v 
 # -- Compiling module DE2_115_qsys_mm_interconnect_0
 # 
 # Top level modules:
 # 	DE2_115_qsys_mm_interconnect_0
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/DE2_115_qsys_uart_0.v}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -vlog01compat -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/DE2_115_qsys_uart_0.v 
 # -- Compiling module DE2_115_qsys_uart_0_tx
 # -- Compiling module DE2_115_qsys_uart_0_rx_stimulus_source
@@ -69,89 +69,89 @@
 # 
 # Top level modules:
 # 	DE2_115_qsys_uart_0
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_merlin_slave_translator.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_merlin_slave_translator.sv 
 # -- Compiling module altera_merlin_slave_translator
 # 
 # Top level modules:
 # 	altera_merlin_slave_translator
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_merlin_master_translator.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/altera_merlin_master_translator.sv 
 # -- Compiling module altera_merlin_master_translator
 # 
 # Top level modules:
 # 	altera_merlin_master_translator
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work DE2_115_qsys +incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules {/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/Rsa256Wrapper.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work DE2_115_qsys "+incdir+/home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules" /home/alpha/Documents/lab2/DE2_115/DE2_115_qsys/synthesis/submodules/Rsa256Wrapper.sv 
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/alpha/Documents/lab2/DE2_115 {/home/alpha/Documents/lab2/DE2_115/Rsa256Core.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/alpha/Documents/lab2/DE2_115" /home/alpha/Documents/lab2/DE2_115/Rsa256Core.sv 
 # -- Compiling module Rsa256Core
 # 
 # Top level modules:
 # 	Rsa256Core
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:21 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/alpha/Documents/lab2/DE2_115 {/home/alpha/Documents/lab2/DE2_115/DE2_115.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:21 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/alpha/Documents/lab2/DE2_115" /home/alpha/Documents/lab2/DE2_115/DE2_115.sv 
 # -- Compiling module DE2_115
 # 
 # Top level modules:
 # 	DE2_115
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:22 on Sep 27,2015, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/alpha/Documents/lab2/DE2_115 {/home/alpha/Documents/lab2/DE2_115/Rsa256Wrapper.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:22 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/alpha/Documents/lab2/DE2_115" /home/alpha/Documents/lab2/DE2_115/Rsa256Wrapper.sv 
 # -- Compiling module Rsa256Wrapper
 # 
 # Top level modules:
 # 	Rsa256Wrapper
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:22 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/alpha/Documents/lab2/DE2_115 {/home/alpha/Documents/lab2/DE2_115/SevenHexDecoder.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:22 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/alpha/Documents/lab2/DE2_115" /home/alpha/Documents/lab2/DE2_115/SevenHexDecoder.sv 
 # -- Compiling module SevenHexDecoder
 # 
 # Top level modules:
 # 	SevenHexDecoder
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:22 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+/home/alpha/Documents/lab2/DE2_115 {/home/alpha/Documents/lab2/DE2_115/tb.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:22 on Sep 27,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/alpha/Documents/lab2/DE2_115" /home/alpha/Documents/lab2/DE2_115/tb.sv 
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 16:12:53 on Sep 27,2015, Elapsed time: 0:00:00
+# End time: 20:57:22 on Sep 27,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L DE2_115_qsys -voptargs="+acc"  tb
 # vsim -i -l msim_transcript -do "DE2_115_run_msim_rtl_systemverilog.do" 
-# Start time: 16:12:53 on Sep 27,2015
+# Start time: 20:57:22 on Sep 27,2015
 # Loading sv_std.std
 # Loading work.tb
 # Loading work.Rsa256Core
@@ -159,10 +159,13 @@
 #         Region: /tb
 # ** Warning: (vsim-PLI-3003) /home/alpha/Documents/lab2/DE2_115/tb.sv(30): [TOFD] - System task or function '$fsdbDumpvars' is not defined.
 #         Region: /tb
-# ** Warning: (vsim-PLI-3691) /home/alpha/Documents/lab2/DE2_115/tb.sv(40): Expected a system task, not a system function '$fread'.
-#         Region: /tb/#anonblk#1954#36#4#
 # ** Warning: (vsim-PLI-3691) /home/alpha/Documents/lab2/DE2_115/tb.sv(41): Expected a system task, not a system function '$fread'.
-#         Region: /tb/#anonblk#1954#36#4#
+#         Region: /tb/#anonblk#1954#37#4#
+# ** Warning: (vsim-PLI-3691) /home/alpha/Documents/lab2/DE2_115/tb.sv(42): Expected a system task, not a system function '$fread'.
+#         Region: /tb/#anonblk#1954#37#4#
+# ** Warning: (vsim-3017) /home/alpha/Documents/lab2/DE2_115/tb.sv(14): [TFMPC] - Too few port connections. Expected 9, found 8.
+#         Region: /tb/core
+# ** Warning: (vsim-3722) /home/alpha/Documents/lab2/DE2_115/tb.sv(14): [TFMPC] - Missing connection for port 'o_num'.
 # 
 # add wave *
 # view structure
@@ -176,65 +179,77 @@
 # ** Warning: (vsim-3534) [FOFIR] - Failed to open file "../pc_sw/golden/dec1.txt" for reading.
 # No such file or directory. (errno = ENOENT)    : /home/alpha/Documents/lab2/DE2_115/tb.sv(32)
 #    Time: 0 ps  Iteration: 0  Instance: /tb
-# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(40): $fread : Argument 2 is not a valid file descriptor.
-#         Region: /tb
 # ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(41): $fread : Argument 2 is not a valid file descriptor.
+#         Region: /tb
+# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(42): $fread : Argument 2 is not a valid file descriptor.
 #         Region: /tb
 # =========
 # enc   0 = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # =========
 # =========
-# dec   0 = Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# gold  0 = Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# dec   0 = 000000000000000000000000000000000000000000000000000000000005dee3
+# gold  0 = 000000000000000000000000000000000000000000000000000000000005dee3
 # =========
-# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(40): $fread : Argument 2 is not a valid file descriptor.
-#         Region: /tb
 # ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(41): $fread : Argument 2 is not a valid file descriptor.
+#         Region: /tb
+# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(42): $fread : Argument 2 is not a valid file descriptor.
 #         Region: /tb
 # =========
 # enc   1 = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # =========
 # =========
-# dec   1 = 0000000000000000000000000000000000000000000000000000000000000002
-# gold  1 = 0000000000000000000000000000000000000000000000000000000000000002
+# dec   1 = 000000000000000000000000000000000000000000000000000000000005dee3
+# gold  1 = 000000000000000000000000000000000000000000000000000000000005dee3
 # =========
-# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(40): $fread : Argument 2 is not a valid file descriptor.
-#         Region: /tb
 # ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(41): $fread : Argument 2 is not a valid file descriptor.
+#         Region: /tb
+# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(42): $fread : Argument 2 is not a valid file descriptor.
 #         Region: /tb
 # =========
 # enc   2 = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # =========
 # =========
-# dec   2 = 0000000000000000000000000000000000000000000000000000000000000002
-# gold  2 = 0000000000000000000000000000000000000000000000000000000000000002
+# dec   2 = 000000000000000000000000000000000000000000000000000000000005dee3
+# gold  2 = 000000000000000000000000000000000000000000000000000000000005dee3
 # =========
-# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(40): $fread : Argument 2 is not a valid file descriptor.
-#         Region: /tb
 # ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(41): $fread : Argument 2 is not a valid file descriptor.
+#         Region: /tb
+# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(42): $fread : Argument 2 is not a valid file descriptor.
 #         Region: /tb
 # =========
 # enc   3 = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # =========
 # =========
-# dec   3 = 0000000000000000000000000000000000000000000000000000000000000002
-# gold  3 = 0000000000000000000000000000000000000000000000000000000000000002
+# dec   3 = 000000000000000000000000000000000000000000000000000000000005dee3
+# gold  3 = 000000000000000000000000000000000000000000000000000000000005dee3
 # =========
-# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(40): $fread : Argument 2 is not a valid file descriptor.
-#         Region: /tb
 # ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(41): $fread : Argument 2 is not a valid file descriptor.
+#         Region: /tb
+# ** Error: (vsim-PLI-3084) /home/alpha/Documents/lab2/DE2_115/tb.sv(42): $fread : Argument 2 is not a valid file descriptor.
 #         Region: /tb
 # =========
 # enc   4 = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # =========
 # =========
-# dec   4 = 0000000000000000000000000000000000000000000000000000000000000002
-# gold  4 = 0000000000000000000000000000000000000000000000000000000000000002
+# dec   4 = 000000000000000000000000000000000000000000000000000000000005dee3
+# gold  4 = 000000000000000000000000000000000000000000000000000000000005dee3
 # =========
-# ** Note: $finish    : /home/alpha/Documents/lab2/DE2_115/tb.sv(55)
-#    Time: 13465 ns  Iteration: 2  Instance: /tb
+# ** Note: $finish    : /home/alpha/Documents/lab2/DE2_115/tb.sv(56)
+#    Time: 3457915 ns  Iteration: 2  Instance: /tb
 # 1
-# Break in Module tb at /home/alpha/Documents/lab2/DE2_115/tb.sv line 55
+# Break in Module tb at /home/alpha/Documents/lab2/DE2_115/tb.sv line 56
 # Simulation Breakpoint: 1
-# Break in Module tb at /home/alpha/Documents/lab2/DE2_115/tb.sv line 55
+# Break in Module tb at /home/alpha/Documents/lab2/DE2_115/tb.sv line 56
 # MACRO ./DE2_115_run_msim_rtl_systemverilog.do PAUSED at line 30
+add wave -position end  sim:/tb/core/o_num
+# Load canceled
+run -all
+# Too slow, abort.
+# ** Note: $finish    : /home/alpha/Documents/lab2/DE2_115/tb.sv(62)
+#    Time: 5 ms  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at /home/alpha/Documents/lab2/DE2_115/tb.sv line 62
+# Simulation Breakpoint: 1
+# Break in Module tb at /home/alpha/Documents/lab2/DE2_115/tb.sv line 62
+# MACRO ./DE2_115_run_msim_rtl_systemverilog.do PAUSED at line 30
+add wave -position end  sim:/tb/core/mult_state_r

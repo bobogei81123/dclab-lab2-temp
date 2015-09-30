@@ -10,7 +10,7 @@ module Rsa256Core(
 	output o_num
 );
 
-typedef logic [256:0] i256;
+typedef logic [258:0] i256;
 typedef logic [15:0] i16;
 
 i256 a, d, n;
@@ -56,12 +56,12 @@ assign o_finished = (main_state_r == S_IDLE);
 assign o_a_pow_e = ans_r;
 assign o_num = num_r;
 
-wire [256:0] ct1, ct2;
-assign ct1 = (ctemp_w << 1);
-assign ct2 = (ctemp_r[0] ? ctemp_r + n : ctemp_r);
+wire [258:0] ct1, ct2;
+assign ct1 = (ctemp_r << 1);
+assign ct2 = (ans_r[0] ? ans_r + n : ans_r);
 
-wire [256:0] mt1, mt2;
-assign mt1 = (mb_r[0] ? mans_r + a : mans_r);
+wire [258:0] mt1, mt2;
+assign mt1 = (mb_r[0] ? mans_r + ma_r : mans_r);
 assign mt2 = (mt1[0] ? mt1 + n : mt1);
 
 always_comb begin
@@ -106,7 +106,6 @@ always_comb begin
     S_PRESHIFTC: begin
       ctemp_w = (ct1 >= n ? ct1 - n : ct1);
       if (ccount_r == 0) begin
-        // core_state_w = S_IDLEC;
         core_state_w = S_LOOP1C;
         ccount_w = 255;
       end else begin
@@ -131,8 +130,7 @@ always_comb begin
     end
     S_LOOP2C: begin
       if (ccount_r == 0) begin
-        core_state_w = S_POSTSHIFTC;
-        ccount_w = 255;
+        core_state_w = S_IDLEC;
       end else begin
         ma_w = ctemp_r;
         mb_w = ctemp_r;
@@ -146,13 +144,6 @@ always_comb begin
       if (mult_state_r == S_IDLEM) begin
         ctemp_w = mans_r;
         core_state_w = S_LOOP1C;
-      end
-    end
-    S_POSTSHIFTC: begin
-      ans_w = ct2 >> 1;
-      ccount_w = ccount_r - 1;
-      if (ccount_r == 0) begin
-        core_state_w = S_IDLEC;
       end
     end
   endcase

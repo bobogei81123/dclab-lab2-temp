@@ -18,9 +18,9 @@ module tb;
 		// .i_a(256'hB6ACE0B14720169839B15FD13326CF1A1829BEAFC37BB937BEC8802FBCF46BD9),
 		// .i_d(256'hB6ACE0B14720169839B15FD13326CF1A1829BEAFC37BB937BEC8802FBCF46BD9),
 		// .i_n(256'hCA3586E7EA485F3B0A222A4C79F7DD12E85388ECCDEE4035940D774C029CF831),
-    .i_a(256'd3),
-    .i_d(256'd4),
-    .i_n(256'd5),
+    .i_a(256'd91245),
+    .i_d(256'd48291),
+    .i_n(256'd1112311),
 		.o_a_pow_e(decrypted_data),
 		.o_finished(fin)
 	);
@@ -31,6 +31,7 @@ module tb;
 		fp_e = $fopen("../pc_sw/golden/enc1.bin", "rb");
 		fp_d = $fopen("../pc_sw/golden/dec1.txt", "rb");
 		rst = 1;
+    start_cal = 0;
 		#(2*CLK)
 		rst = 0;
 		for (int i = 0; i < 5; i++) begin
